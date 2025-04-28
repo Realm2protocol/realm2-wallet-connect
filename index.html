@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Connect Wallet - Realm²</title>
+    <style>
+        .realm-button {
+            background: linear-gradient(90deg, #f8a5c2, #00f0f0);
+            color: black;
+            padding: 12px 24px;
+            border: none;
+            border-radius: 12px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .realm-button:hover {
+            transform: scale(1.05);
+            opacity: 0.9;
+        }
+
+        #wallet-connection {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        #wallet-address {
+            margin-top: 15px;
+            font-weight: bold;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+<div id="wallet-connection">
+    <button class="realm-button" onclick="connectWallet()">Connect Wallet</button>
+    <p id="wallet-address"></p>
+</div>
+
+<script>
+function connectWallet() {
+    window.location.href = "https://wallet.multiversx.com/login?callbackUrl=https://realm2.space/realmo2-engine";
+}
+</script>
+</body>
+</html>
